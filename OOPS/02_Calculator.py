@@ -1,0 +1,59 @@
+'''Problem Statement: 
+           Write a class “Calculator” capable of finding square, cube and square root of number.
+
+'''
+# Creating the class name Calculator 
+
+class Calculator:
+    # Constructor method 
+    # It Runs automatically when object is created
+    # It initializes the number given by user 
+
+    def __init__(self,number):
+        
+        #Instance variable to store the number 
+        self.number=number
+
+    # Method to calculate the square of the number
+
+    def square(self):
+
+        #Formula : Number * Number
+        return self.number *self.number
+    
+    # Method to Calculate the cube of the number 
+    def cube(self):
+
+        #Formula : Number * Number * number
+        return self.number*self.number*self.number
+
+    # Method to Calculate the square root of the number 
+    def square_root(self):
+
+        # Formula : Number **0.5
+        return self.number**0.5
+    
+# Creating the object for the calculator class
+# Here we are passing the number 25
+
+num1=Calculator(25)
+
+#Calling method using object
+
+print("Number:", num1.number)
+
+# Calling the square method 
+
+print("Square:", num1.square())
+
+# Calling the Cube method 
+
+print("Cube:", num1.cube())
+
+#Calling the square root method
+
+print("Square root : ", num1.square_root())
+
+
+
+
